@@ -1,7 +1,7 @@
-
 public class Shallow_Deep {
 
     public static void main(String[] args) {
+
         Student s1 = new Student();
         s1.name = "rohit";
         s1.age = 21;
@@ -9,9 +9,11 @@ public class Shallow_Deep {
         s1.marks[1] = 89;
         s1.marks[2] = 48;
 
+        // copying the object
         Student s2 = new Student(s1);
-        s1.marks[2] = 40;
+        s1.marks[2] = 40;  // changing the marks
 
+        // printing the marks
         for (int i = 0; i < s2.marks.length; i++) {
             System.out.println(s2.marks[i]);
         }
@@ -37,6 +39,7 @@ class Student {
     //     // shallow copy
     //     this.marks = s1.marks;
     // }
+
     // Deep copy constructor
     Student(Student s1) {
         this.name = s1.name;

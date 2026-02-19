@@ -10,12 +10,15 @@ public class copy_constructor {
         s1.marks[1] = 100;
         s1.marks[2] = 89;
 
+        // copying object 1 in object 2
         Student s2 = new Student(s1);
         System.out.println(s2.name);
         System.out.println(s2.age);
 
+        // changing the marks of object 1 which will refelect in object 2 marks
         s1.marks[2] = 9;
 
+        // printing the marks from array
         for (int i = 0; i < s2.marks.length; i++) {
 
             System.out.print(s2.marks[i] + " ");
