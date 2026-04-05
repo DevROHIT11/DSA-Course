@@ -1,3 +1,4 @@
+
 public class Types_1 {
 
     public static void main(String[] args) {
